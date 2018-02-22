@@ -1,0 +1,18 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Coffee Sign In</title>
+      {% else %}
+      <title>Welcome to Coffee Sign In</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+            Coffee Sign In
+            <a href="/index">Home</a>
+            <a href="/login">Login</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
